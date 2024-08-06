@@ -1,0 +1,38 @@
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(27, 101, 154);
+}
+
+a:visited{
+    color: rgb(124, 192, 241);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.especial:hover{
+    color:rgb(80, 145, 192);
+    background-color: aliceblue;
+    text-decoration: none;
+}
+
+.especial::before{
+    content: '>>';
+    font-weight: lighter;
+}
+
+.especial::after{
+    content: '<<';
+    font-weight: lighter;
+}
+
+div > p{
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+    background-color: rgb(212, 148, 148);
+}
